@@ -1,0 +1,265 @@
+/* Estilos Generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Modelo de caja border-box para incluir padding y border en el ancho total */
+}
+
+/* Estilos del Banner */
+.banner{
+    width: 100%;
+    height: 100vh; /* Altura igual a la altura de la pantalla */
+    background-position: center; /* Posición del fondo centrada */
+    background-size: center; /* Tamaño del fondo centrado */
+}
+
+/* Estilos de la Barra de Navegación */
+.navbar{
+    width: 90%;
+    padding: 30px;
+    margin: auto; /* Margen automático en los lados para centrar */
+    display: flex; /* Contenedor de display flex para alinear elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+}
+
+/* Estilos del Logo */
+.logo{
+    width: 160px;
+    margin-top: -10px; /* Ajuste de margen hacia arriba */
+    cursor: pointer; /* Cursor cambia a mano al pasar sobre el logo */
+}
+
+/* Estilos de los Elementos de la Barra de Navegación */
+.navbar ul li{
+    list-style: none; /* Elimina las viñetas de la lista */
+    display: inline-block; /* Elementos en línea */
+    margin: 20px; /* Margen entre elementos */
+}
+
+/* Estilos de los Enlaces de la Barra de Navegación */
+.navbar ul li a{
+    text-decoration: none; /* Quita la decoración de texto de los enlaces */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    color: white; /* Color de texto blanco */
+    font-weight: 600; /* Grosor de la fuente */
+    padding: 15px; /* Espaciado interno */
+}
+
+/* Interacción con los Enlaces */
+li a:hover{
+    background: white; /* Cambia el fondo del enlace a blanco al pasar el cursor */
+    transition: 0.6s; /* Transición suave */
+}
+
+/* Interacción con la Barra de Navegación al Pasar el Cursor */
+.navbar a:hover{
+    color: black; /* Cambia el color del texto a negro al pasar el cursor */
+}
+
+/* Estilos del Contenido */
+.content{
+    margin-top: 70px;
+    width: 100%;
+    position:absolute;
+    color: white; /* Color de texto blanco */
+    top: 45%; /* Posiciona el contenido en el centro vertical */
+    transform: translateY(-50%); /* Ajusta la posición vertical */
+    text-align: center; /* Alineación centrada */
+    z-index: 1;
+    
+}
+
+/* Estilos del Título Principal */
+.content h1{
+    margin-top: 80px; /* Margen superior */
+    font-size: 90px; /* Tamaño de fuente */
+    font-weight: 800; /* Grosor de la fuente */
+}
+
+/* Estilos del Botón */
+.boton {
+    text-decoration: none;
+    color: black; /* Color de texto negro */
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 0;
+    padding: 2px 30px;
+    background-color: white; /* Color de fondo blanco */
+    transition: 0.6s; /* Transición suave */
+    
+}
+
+/* Interacción con el Botón al Pasar el Cursor */
+.boton:hover{
+    letter-spacing: 3px; /* Aumenta el espacio entre letras */
+    color: black; /* Cambia el color del texto a negro al pasar el cursor */
+}
+
+
+/* Estilos del Video en el Banner */
+.banner video{
+    position:fixed; /* Posicionamiento absoluto */
+    right: 0; /* Alineación a la derecha */
+    
+    z-index: -2; /* Capa detrás de los demás elementos */
+}
+video{
+     z-index: -2;
+}
+.carousel-item img {
+    width: 100vw; /* Asegura que la imagen cubra el ancho completo de la vista */
+    height: 90vh; /* Asegura que la imagen cubra el alto completo de la vista */
+    object-fit: cover; /* Cubre el área sin perder la proporción */
+    z-index: -3;
+    opacity: 0.3;
+}
+footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    
+}
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 50%; /* Para hacer los iconos redondos */
+    padding: 10px;
+    transition: background-color 0.3s; /* Transición para el hover */ 
+  }
+  .redes-sociales img {
+    width: 40px; /* Ajusta el ancho de las imágenes */
+    height: 40px; /* Ajusta la altura de las imágenes */
+    border-radius: 50%; /* Para hacer las imágenes redondas */  
+    
+  }
+  
+  .redes-sociales a:hover {
+    background-color: white; /* Cambiar el color de fondo en hover */ 
+    
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+        
+
+        .content {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em; /* Tamaño inicial de la fuente */
+            animation: resizeText 10s infinite; /* Animación de cambio de tamaño */
+        }
+
+        @keyframes resizeText {
+            0% { font-size: 2.5em; }
+            50% { font-size: 3.5em; }
+            100% { font-size: 2.5em; }
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            @keyframes resizeText {
+                0% { font-size: 2em; }
+                50% { font-size: 3em; }
+                100% { font-size: 2em; }
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            @keyframes resizeText {
+                0% { font-size: 1.5em; }
+                50% { font-size: 2.5em; }
+                100% { font-size: 1.5em; }
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            @keyframes resizeText {
+                0% { font-size: 1em; }
+                50% { font-size: 2em; }
+                100% { font-size: 1em; }
+            }
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+                width: 100%;
+            }
+
+            .navbar ul li a {
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+                text-align: center;
+                background-color: #444;
+            }
+
+            .navbar img.logo {
+                margin-bottom: 10px;
+            }
+        }
+        .navbar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar img.logo {
+            height: 40px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+        }
+
+
+
